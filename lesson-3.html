@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = 100;
+        var i = 1;
+        while (i <= n) {
+            console.log(i++);
+        }
+    </script>
+    <script>
+        const basketItems = ['samsugn', 'sony', 'apple', 'google', 'honor', 'xiaomi'];
+        const ItensConst = [
+            ['samsung', 50000],
+            ['sony', 40000],
+            ['apple', 90000],
+            ['honor', 30000],
+            ['xiaomi', 20000]
+        ];
+        let a = '-это ноль';
+        let b = '-это четное число';
+        let c = '-это нечетное число'
+        let d = -1;
+        do {
+            d++;
+            if (d == 0) {
+                alert(d + a);
+            }
+            esle
+            if (d % 2 == 0) {
+                alert(d + b);
+            } else {
+                alert(d + c);
+            }
+        } while (d < 10);
+        const getItemPrice = (item, array) => {
+                const items = [];
+                const costs = [];
+                for (let i = 0; i < array.length; i++) {
+                    items.push(array[i][0]);
+                    costs.push(array[i][1]);
+                }
+                const countBasketPrice = (basketArr, costArr) => {
+                    let totalCost = 0;
+                    for (let i = 0; i < basketArr.length; i++) {
+                        totalCost += getItemPrice(basketArr[i], costArr);
+                    }
+                    return totalCost;
+                };
+                console.log('Массив корзины: ' + basketItems);
+                console.log('Массив стоимости каждого товара: ' + ItemsCost);
+                console.log('Вывод полной стоимости корзины: ' + countBasketPrice(basketItems, ItemsCost));
+    </script>
+    <script>
+        for (let i = 0; i <= 9; console.log('Цикл без тела {}: ' + i++)
+    </script>
+</body>
+
+</html>
